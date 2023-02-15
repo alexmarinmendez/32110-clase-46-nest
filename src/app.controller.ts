@@ -7,7 +7,7 @@ export class AppController {
 
   @Get('users')
   getUsers(): string[] {
-    return ['Shakira', 'Piqué'];
+    return this.appService.getUsers();
   }
 
   @Get()
